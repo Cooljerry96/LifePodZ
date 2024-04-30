@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
     public float SpawnRate = 1.0f;
     public float xAxis = 46;
     public float yAxis = 36;
-    public float zAxis = 0;
+    private float zAxis = 0;
     private Vector3[] vectors = new Vector3[4];
    // public float xAxis = 0;
   //  private float yAxis = 0;

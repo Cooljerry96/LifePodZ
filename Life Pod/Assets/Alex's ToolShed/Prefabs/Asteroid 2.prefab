@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planet: {fileID: 4472671141578107383, guid: 10481b31ed95aca4e93913facc73f47f, type: 3}
   alignToPlanet: 1
-  gravityConstant: 0.5
+  gravityConstant: 1
 --- !u!65 &7747205762704497578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -206,8 +206,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.631632, y: 3.6128411, z: 2.3005705}
+  m_Center: {x: 0.024293602, y: 0.28702688, z: -0.0192613}
 --- !u!1 &146874
 GameObject:
   m_ObjectHideFlags: 0

@@ -258,7 +258,7 @@ Transform:
   m_GameObject: {fileID: 151664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planet: {fileID: 4472671141578107383, guid: 10481b31ed95aca4e93913facc73f47f, type: 3}
   alignToPlanet: 1
-  gravityConstant: 0.5
+  gravityConstant: 1
 --- !u!65 &1778717713243439454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -351,8 +351,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9372107, y: 1.6579148, z: 1.6000495}
+  m_Center: {x: 0.050555646, y: -0.015940845, z: 0.053120375}
 --- !u!1 &176588
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ProjectileEnemies : MonoBehaviour
@@ -17,6 +18,21 @@ public class ProjectileEnemies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+  
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Planet"))
+        {
+            Destroy(gameObject);         
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
+        }
+
     }
 }
