@@ -14,7 +14,7 @@ public class PlanetGravity : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-    
+
     }
 
     void Update()
