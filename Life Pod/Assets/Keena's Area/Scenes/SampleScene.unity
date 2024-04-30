@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 1180030444}
   - component: {fileID: 1180030443}
   m_Layer: 0
-  m_Name: Spawn Manager
+  m_Name: SpawnManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -729,14 +729,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroids:
   - {fileID: 151664, guid: 10ceb1a5898cf1f46bd11bbfe681387b, type: 3}
+  - {fileID: 141316, guid: 7c4e875f12dd2f043bf99ff5b4fa28fe, type: 3}
+  - {fileID: 130102, guid: 052d9bcb67a71074d81a42a43acfa0a1, type: 3}
   isGameActive: 1
   SpawnRate: 1
-  leftRightBoarder:
-  - 36
-  - 46
-  topBottomBoarder:
-  - 26
-  - 36
+  xAxis: 46
+  yAxis: 36
+  zAxis: 0
 --- !u!4 &1180030444
 Transform:
   m_ObjectHideFlags: 0
@@ -746,7 +745,7 @@ Transform:
   m_GameObject: {fileID: 1180030442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.325827, y: 7.259786, z: 89.92439}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
