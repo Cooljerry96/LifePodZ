@@ -7,7 +7,7 @@ public class PlanetGravity : MonoBehaviour
     public Transform planet;
     public bool alignToPlanet = true;
 
-    float gravityConstant = 500;
+    public float gravityConstant;
     Rigidbody rb;
 
 

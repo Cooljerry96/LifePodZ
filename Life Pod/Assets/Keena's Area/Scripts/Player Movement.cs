@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float playerSpeed = 25;
-    private Vector3 planetDirection;
+    
     // Start is called before the first frame update
     void Start()
     {
