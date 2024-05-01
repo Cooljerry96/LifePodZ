@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Keena's Area/Scenes/SampleScene.unity
+    guid: d22552bba15b6cc45ac69c5c905d1c8c
   m_configObjects: {}

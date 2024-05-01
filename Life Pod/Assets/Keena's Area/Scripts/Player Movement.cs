@@ -6,12 +6,16 @@ public class PlayerMovement : MonoBehaviour
 {
     private float playerSpeed = 25;
     public GameObject projectilePrefab;
+
+    public AudioSource shotAudio;
+    public AudioClip shotClip;
+    public AudioClip explosionClip;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        shotAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // lauch a projectile from me
             Instantiate(projectilePrefab, transform.position , transform.rotation);
+            shotAudio.PlayOneShot(shotClip, .25f);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))

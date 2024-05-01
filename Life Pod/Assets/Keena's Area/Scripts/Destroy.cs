@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
+    private PlayerMovement playerMovementAudio;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerMovementAudio = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -24,6 +26,8 @@ public class Destroy : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
+
+            playerMovementAudio.shotAudio.PlayOneShot(playerMovementAudio.explosionClip, 1);
         }
         if (collision.gameObject.CompareTag("Planet"))
         {
