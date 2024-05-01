@@ -20,11 +20,5 @@ public class MoveForward : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
+    
 }

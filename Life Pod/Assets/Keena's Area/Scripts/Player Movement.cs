@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float playerSpeed = 25;
     public GameObject projectilePrefab;
-    private Vector3 offset = new Vector3(0, 1, 0);
+    
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // lauch a projectile from me
-            Instantiate(projectilePrefab, (transform.position + offset), transform.rotation);
+            Instantiate(projectilePrefab, transform.position , transform.rotation);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))

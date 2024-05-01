@@ -241,6 +241,8 @@ GameObject:
   - component: {fileID: 11425652}
   - component: {fileID: -2422646482553316513}
   - component: {fileID: -8173643674036652272}
+  - component: {fileID: -2340075110120039056}
+  - component: {fileID: 4109828129934410409}
   m_Layer: 0
   m_Name: Asteroid 1
   m_TagString: Enemy
@@ -328,9 +330,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab37321d6807f847bbd038aa1b9bd62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 8850279495017809615, guid: 282fb0192c96cfb439d684961fc34a53, type: 3}
   alignToPlanet: 1
-  gravityConstant: 0
+  gravityConstant: 10
+--- !u!64 &-2340075110120039056
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151664}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4fb53cd438460f84a97145bd5e35baf1, type: 3}
+--- !u!114 &4109828129934410409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1509fe5a134f009469f9b030d1143c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &176588
 GameObject:
   m_ObjectHideFlags: 0
