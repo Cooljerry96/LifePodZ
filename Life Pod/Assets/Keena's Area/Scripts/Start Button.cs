@@ -15,11 +15,13 @@ public class StartButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Assign components in Unity to variable and add listener for when button is pressed
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         button = GetComponent<Button>();
         button.onClick.AddListener(StartGameButton);
     }
 
+    //What to do when boutton is pressed
     void StartGameButton()
     {        
         gameManager.StartGame();
