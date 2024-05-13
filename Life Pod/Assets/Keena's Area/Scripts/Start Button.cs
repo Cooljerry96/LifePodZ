@@ -9,6 +9,7 @@ public class StartButton : MonoBehaviour
     private GameManager gameManager;
     private Button button;
     public bool pressed;
+   
     
 
     // Start is called before the first frame update
@@ -23,8 +24,8 @@ public class StartButton : MonoBehaviour
     {        
         gameManager.StartGame();
         pressed = true;
-
     }
+
 
     // Update is called once per frame
     void Update()
