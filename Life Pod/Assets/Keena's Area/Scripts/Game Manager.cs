@@ -21,13 +21,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Button[] allLevels;
     private bool pressed;
 
-
     // Start is called before the first frame update
     void Start()
     {
         //assign Start Button in Unity to the variable
         startButton = GameObject.Find("Start").GetComponent<StartButton>();
-        
     }
 
     private void Awake()
@@ -44,7 +42,6 @@ public class GameManager : MonoBehaviour
     // Set the Class to call when button is pressed
     private void ListenerHandler(UnityEngine.UI.Button btn, int index)
     {
-        
         btn.onClick.AddListener(LevelSelection);
     }
 
@@ -54,7 +51,6 @@ public class GameManager : MonoBehaviour
         isGameActive = true;
         startMenu.gameObject.SetActive(false);
         levels.gameObject.SetActive(true);
-        
     }
 
     //When Level is selected
@@ -64,8 +60,7 @@ public class GameManager : MonoBehaviour
         pressed = true;
     }
 
-
-    //Timer coRoutine
+    //Timer Coroutine
     IEnumerator StartCoutdownRoutine()
     {
         if (countDown > 0.0f)
@@ -75,10 +70,7 @@ public class GameManager : MonoBehaviour
         }
         yield return  countDownText.text;
     }
-
   
-    
-
     // Update is called once per frame
     void Update()
     {
@@ -88,7 +80,6 @@ public class GameManager : MonoBehaviour
             StartCoroutine(StartCoutdownRoutine());
             startTimer.gameObject.SetActive(true);
             hyperSpace.gameObject.SetActive(false);
-
         }
     }
 }
