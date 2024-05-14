@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TerrainUtils;
 
 public class MouseDraw : MonoBehaviour
 {
 
     public GameObject linePrefab;
     Coroutine drawing;
+    public Rigidbody2D lineGrav;
+    public bool lineDone;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -28,7 +31,9 @@ public class MouseDraw : MonoBehaviour
 
     void StartLine()
     {
-        if(drawing != null)
+        lineDone = false;
+
+        if (drawing != null)
         {
             StopCoroutine(drawing);
         }
@@ -38,6 +43,8 @@ public class MouseDraw : MonoBehaviour
 
     void FinishLine()
     {
+        lineDone = true;
+      //  this.lineGrav.simulated = true;
         StopCoroutine(drawing);
     }
 

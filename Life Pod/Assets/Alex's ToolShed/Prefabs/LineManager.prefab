@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 7389662144594613934, guid: cdc4f8c1b3b9f0e4aa6bdc2ce0eabb6f, type: 3}
+  lineGrav: {fileID: 2950772410617082103, guid: cdc4f8c1b3b9f0e4aa6bdc2ce0eabb6f, type: 3}
