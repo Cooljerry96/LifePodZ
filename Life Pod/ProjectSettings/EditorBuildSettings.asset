@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Keena's Area/Scenes/SampleScene.unity
     guid: d22552bba15b6cc45ac69c5c905d1c8c
+  - enabled: 1
+    path: Assets/Keena's Area/Scenes/Prototype.unity
+    guid: 5858753938186bc47982f92a70858edb
+  - enabled: 1
+    path: Assets/Keena's Area/Scenes/Level 1.unity
+    guid: 5fc78dc6b401a1f4ea500915cf45451e
   m_configObjects: {}

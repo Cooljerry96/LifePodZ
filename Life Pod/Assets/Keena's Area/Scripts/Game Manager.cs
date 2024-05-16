@@ -11,12 +11,13 @@ public class GameManager : MonoBehaviour
     private StartButton startButton;
     public GameObject startMenu;
     public GameObject levels;
-    public GameObject startTimer;
     public GameObject hyperSpace;
+    
     public bool isGameActive;
 
-    public TextMeshProUGUI countDownText;
-    private float countDown = 15;
+    /*public TextMeshProUGUI countDownText;
+      public GameObject startTimer;
+      private float countDown = 15;*/
 
     [SerializeField] private UnityEngine.UI.Button[] allLevels;
     private bool pressed;
@@ -45,6 +46,11 @@ public class GameManager : MonoBehaviour
         btn.onClick.AddListener(LevelSelection);
     }
 
+    private void CallLevelOne()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
     //When the start button is pressed
     public void StartGame()
     {
@@ -59,27 +65,15 @@ public class GameManager : MonoBehaviour
         levels.gameObject.SetActive(false);
         pressed = true;
     }
-
-    //Timer Coroutine
-    IEnumerator StartCoutdownRoutine()
-    {
-        if (countDown > 0.0f)
-        {
-           countDown -= Time.deltaTime;
-           countDownText.text = "Start In: " + countDown.ToString("F0");
-        }
-        yield return  countDownText.text;
-    }
-  
-    // Update is called once per frame
+ 
+    // Update is called once per frameC
     void Update()
     {
-        // Start coroutine
+
         if (pressed == true)
         {
-            StartCoroutine(StartCoutdownRoutine());
-            startTimer.gameObject.SetActive(true);
-            hyperSpace.gameObject.SetActive(false);
+            CallLevelOne();
         }
+
     }
 }
