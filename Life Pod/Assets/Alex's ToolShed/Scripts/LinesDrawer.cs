@@ -21,6 +21,8 @@ public class LinesDrawer : MonoBehaviour
     {
         cam = Camera.main;
         cantDrawOverLayerIndex = LayerMask.NameToLayer("CantDrawOver");
+        
+
     }
 
     void Update()
@@ -47,6 +49,7 @@ public class LinesDrawer : MonoBehaviour
         currentLine.SetLineWidth(lineWidth);
 
     }
+
     // Draw ----------------------------------------------------
     void Draw()
     {
