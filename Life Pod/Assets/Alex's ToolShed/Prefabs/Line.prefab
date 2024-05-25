@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9062585246553436253}
   - component: {fileID: 8176812473175574876}
-  - component: {fileID: 8189804370400739422}
   - component: {fileID: 5374831009760152500}
   - component: {fileID: 4154280924744261735}
   - component: {fileID: 5987225104555285503}
@@ -138,18 +137,6 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!210 &8189804370400739422
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5608221829253775243}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
 --- !u!68 &5374831009760152500
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -186,7 +173,7 @@ EdgeCollider2D:
   m_EdgeRadius: 0.1
   m_Points:
   - {x: -0.0038764253, y: 0.014797896}
-  - {x: -0.0027321726, y: 2.0034323}
+  - {x: -0.002774611, y: 0.09918237}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

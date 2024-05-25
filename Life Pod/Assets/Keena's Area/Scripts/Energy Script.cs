@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class EnergyScript : MonoBehaviour
 {
-    private Slider energyIndicator;
+    public Slider energyIndicator;
     private float energyDrain = 0.1f;
-     
+    public bool isEnergyOut;
+
 
     // Start is called before the first frame update
     void Start()
@@ -15,15 +16,19 @@ public class EnergyScript : MonoBehaviour
         energyIndicator = GetComponent<Slider>();
     }
 
-  
-
     // Update is called once per frame
     void Update()
     {
+        //On button click decrease Energy Indicator based on time passed from the last frame
         if (Input.GetMouseButton(0))
         {
-            //Decrease Energy Indicator based on time passed from the last frame
             energyIndicator.value -= energyDrain * Time.deltaTime;
+        }
+
+        //Turn off bool.
+        if (energyIndicator.value <= 0)
+        {
+            isEnergyOut = true;
         }
     }
 
