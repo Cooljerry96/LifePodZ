@@ -8,7 +8,7 @@ public class Line : MonoBehaviour
     public EdgeCollider2D edgeCollider;
     public Rigidbody2D rigidBody;
 
-    [HideInInspector] public List<Vector2> points = new List<Vector2>();
+    [SerializeField] public List<Vector2> points = new List<Vector2>();
     [HideInInspector] public int pointsCount = 0;
 
     //The minimum distance between line's points.
