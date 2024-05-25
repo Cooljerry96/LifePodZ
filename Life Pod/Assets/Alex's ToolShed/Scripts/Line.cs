@@ -9,7 +9,7 @@ public class Line : MonoBehaviour
     public Rigidbody2D rigidBody;
 
     [SerializeField] public List<Vector2> points = new List<Vector2>();
-    [HideInInspector] public int pointsCount = 0;
+    public int pointsCount = 0;
 
     //The minimum distance between line's points.
     float pointsMinDistance = 0.1f;

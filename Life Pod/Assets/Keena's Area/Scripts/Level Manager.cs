@@ -86,17 +86,17 @@ public class LevelManager : MonoBehaviour
             if (energyScript.energyIndicator.value <= oneStar)
             {
                 starLevel = 1;
-                Debug.Log("1");
+                Debug.Log(starLevel);
             }
             if (energyScript.energyIndicator.value <= twoStar && energyScript.energyIndicator.value > oneStar)
             {
                 starLevel = 2;
-                Debug.Log("2");
+                Debug.Log(starLevel);
             }
             if(energyScript.energyIndicator.value <=threeStar && energyScript.energyIndicator.value >twoStar)
             {
                 starLevel = 3;
-                Debug.Log("3");
+                Debug.Log(starLevel);
             }
         }
 
