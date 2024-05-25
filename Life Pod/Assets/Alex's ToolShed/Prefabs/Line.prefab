@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 5608221829253775243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.93, y: 1.41, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.6, y: 1.5, z: -1}
+  m_LocalScale: {x: 2, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -217,6 +217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c37107a9ed600488c2580167b340cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _slider: {fileID: 0}
+  canvasParent: {fileID: 249542022451804410, guid: c1d690c5422cbf44fab5982ba733ebf2, type: 3}
+  energyIndicator: {fileID: 0}
   lineRenderer: {fileID: 8176812473175574876}
   edgeCollider: {fileID: 5374831009760152500}
   rigidBody: {fileID: 4154280924744261735}

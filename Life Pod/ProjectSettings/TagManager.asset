@@ -8,6 +8,7 @@ TagManager:
   - Planet
   - Line
   - Line Drawer
+  - EnergyBar
   layers:
   - Default
   - TransparentFX
