@@ -17,7 +17,7 @@ public class Line : MonoBehaviour
     
 
     [SerializeField] public List<Vector2> points = new List<Vector2>();
-    public int pointsCount = 0;
+    [HideInInspector] public int pointsCount = 0;
 
     //The minimum distance between line's points.
     float pointsMinDistance = 0.1f;
