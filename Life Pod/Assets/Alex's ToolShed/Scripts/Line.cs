@@ -25,13 +25,9 @@ public class Line : MonoBehaviour
 
         points.Add(newPoint);
         pointsCount++;
-<<<<<<< HEAD
-        // -------------------------------------------- Lower Energy Bar
-        
+      
 
         // -------------------------------------------- Lower Energy Bar
-=======
->>>>>>> 62fd09e8001acb0e47eb33e1351f0a8cc0a4e6ca
 
         //Add Circle Collider to the Point
         CircleCollider2D circleCollider = this.gameObject.AddComponent<CircleCollider2D>();
