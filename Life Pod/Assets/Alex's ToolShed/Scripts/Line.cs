@@ -1,22 +1,14 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
-using Unity.VisualScripting;
 
 public class Line : MonoBehaviour
 {
-    // private UnityEngine.UI.Slider energyBarUI; 
-    
-    public GameObject canvasParent;
-    public UnityEngine.UI.Slider _slider;
-    
+
     public LineRenderer lineRenderer;
     public EdgeCollider2D edgeCollider;
     public Rigidbody2D rigidBody;
-    
 
-    [SerializeField] public List<Vector2> points = new List<Vector2>();
+    [HideInInspector] public List<Vector2> points = new List<Vector2>();
     [HideInInspector] public int pointsCount = 0;
 
     //The minimum distance between line's points.
@@ -24,13 +16,6 @@ public class Line : MonoBehaviour
 
     //Circle collider added to each line's point
     float circleColliderRadius;
-
-    void Start()
-    {
-        _slider = canvasParent.GetComponent<UnityEngine.UI.Slider>();
-        
-    }
-
 
     public void AddPoint(Vector2 newPoint)
     {
@@ -40,12 +25,6 @@ public class Line : MonoBehaviour
 
         points.Add(newPoint);
         pointsCount++;
-        // -------------------------------------------- Lower Energy Bar
-        //float v = energyBarUI.value --;
-
-        Debug.Log(" --- Points Count: "+pointsCount+" "+_slider.value);
-
-        // -------------------------------------------- Lower Energy Bar
 
         //Add Circle Collider to the Point
         CircleCollider2D circleCollider = this.gameObject.AddComponent<CircleCollider2D>();

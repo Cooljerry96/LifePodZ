@@ -1,26 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class LinesDrawer : MonoBehaviour
 {
+
     public GameObject linePrefab;
     public LayerMask cantDrawOverLayer;
     int cantDrawOverLayerIndex;
 
-    public float lineWidth;
+    [Space(30f)]
+    public Gradient lineColor;
     public float linePointsMinDistance;
+    public float lineWidth;
 
     Line currentLine;
+
     Camera cam;
+
 
     void Start()
     {
         cam = Camera.main;
         cantDrawOverLayerIndex = LayerMask.NameToLayer("CantDrawOver");
     }
-    // Line Draw assembled
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -33,19 +35,20 @@ public class LinesDrawer : MonoBehaviour
             EndDraw();
     }
 
-    // Begin Drawing ----------------------------------------------
+    // Begin Draw ----------------------------------------------
     void BeginDraw()
     {
         currentLine = Instantiate(linePrefab, this.transform).GetComponent<Line>();
 
         //Set line properties
         currentLine.UsePhysics(false);
+        currentLine.SetLineColor(lineColor);
         currentLine.SetPointsMinDistance(linePointsMinDistance);
         currentLine.SetLineWidth(lineWidth);
-    }
 
-    // While Drawing ----------------------------------------------------
-    public void Draw()
+    }
+    // Draw ----------------------------------------------------
+    void Draw()
     {
         Vector2 mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
 
@@ -57,9 +60,8 @@ public class LinesDrawer : MonoBehaviour
         else
             currentLine.AddPoint(mousePosition);
     }
-
-    // End Drawing ------------------------------------------------
-    public void EndDraw()
+    // End Draw ------------------------------------------------
+    void EndDraw()
     {
         if (currentLine != null)
         {
