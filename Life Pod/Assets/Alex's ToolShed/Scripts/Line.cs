@@ -41,9 +41,7 @@ public class Line : MonoBehaviour
         points.Add(newPoint);
         pointsCount++;
         // -------------------------------------------- Lower Energy Bar
-        //float v = energyBarUI.value --;
-
-        Debug.Log(" --- Points Count: "+pointsCount+" "+_slider.value);
+        
 
         // -------------------------------------------- Lower Energy Bar
 
@@ -92,5 +90,5 @@ public class Line : MonoBehaviour
 
         edgeCollider.edgeRadius = circleColliderRadius;
     }
-
+  
 }

@@ -19,11 +19,11 @@ public class EnergyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //On button click decrease Energy Indicator based on time passed from the last frame
+      /*  //On button click decrease Energy Indicator based on time passed from the last frame
         if (Input.GetMouseButton(0))
         {
             energyIndicator.value -= energyDrain * Time.deltaTime;
-        }
+        }*/
 
         //Turn off bool.
         if (energyIndicator.value <= 0)
